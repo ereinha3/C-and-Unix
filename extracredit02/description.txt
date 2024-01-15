@@ -1,0 +1,15 @@
+1. Pull the extra credit assignment from the git repo.
+
+2. Read the code to get an understanding of how the code works. In particular, look at the timer and the Makefile.
+
+3. Parallelize your code using OpenMP.
+
+4. Use the provided timer to time your entire code on the provided input, and ensure that the performance improves (i.e., execution time decreases) with the number of threads. The provided input can be found in the "cant" directory. 'cant.mtx' is the matrix, 'b.mtx' is the input matrix, and 'ans.mtx' is the correct output.
+
+You can also change the number of threads using the environment variable OMP_NUM_THREADS in bash:
+
+export OMP_NUM_THREADS=<number of threads to use>
+The performance should increase when you change the number of threads from 1 to 32.
+5. Leave a comment inside the function that indicates what # of threads yielded the best performance and how it compares to running it with only one thread (e.g., it's 10x faster).
+
+6. Do the homework in your own repo, commit, and push to Bitbucket. If you do not push to Bitbucket, the TA and I cannot see the code, and it will be considered a late assignment (i.e., not graded).
